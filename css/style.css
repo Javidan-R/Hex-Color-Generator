@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    background-color: #07abd4;
+    max-width: 1250px;
+    margin: 0 auto;
+    display: grid;
+    align-content: center;
+    height: 100vh;
+  }
+  
+  .hex-color {
+    max-width: 1024px;
+    margin: 100px auto;
+    text-align: center;
+  }
+  
+  .hex-color--header {
+    color: black;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 20px;
+    line-height: 32px;
+  }
+  
+  .hex-color--input {
+    margin: 30px auto;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .hex-color--input #hex {
+    width: 220px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 18px;
+    color: #07abd4;
+    transition: box-shadow 0.3s ease;
+    background-color: #fff;
+  }
+  
+  .hex-color--input #hex:focus {
+    outline: none;
+    box-shadow: 0 0 10px #fff;
+  }
+  
+  .hex-color--input #hex-btn {
+    width: 70px;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #07abd4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #fff;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .hex-color--input #hex-btn:hover {
+    box-shadow: 0 0 10px #000;
+  }
+  
+  .hex-color--btn {
+    width: 170px;
+    height: 50px;
+    font-size: 16px;
+    border: none;
+    border-radius: 7px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    padding: 2px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .hex-color--btn:hover {
+    box-shadow: 0 0 10px #000;
+  }
+  .hex_c{
+    text-align: center;
+    margin: 20px auto;
+    
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .hex-color--header {
+      font-size: 24px;
+    }
+    .hex-color--input{
+      display: block;
+    }
+    .hex-color--input #hex {
+      width: 180px;
+      height: 35px;
+      font-size: 18px;
+      margin: 1% auto;
+    }
+  
+    .hex-color--input #hex-btn {
+      width: 80px;
+      height: 35px;
+      font-size: 14px;
+      margin: 20px auto;
+
+      }
+  
+    .hex-color--btn {
+      width: 140px;
+      height: 45px;
+      font-size: 14px;
+      margin-top: 50px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .hex-color--header {
+      font-size: 18px;
+    }
+  
+    .hex-color--input #hex {
+      width: 150px;
+      height: 30px;
+      font-size: 16px;
+    }
+  
+    .hex-color--input #hex-btn {
+      width: 80px;
+      height: 30px;
+      font-size: 12px;
+      margin: 20px auto;
+
+      
+    }
+  
+    .hex-color--btn {
+      width: 120px;
+      height: 40px;
+      font-size: 12px;
+    }
+  }
+  
+  @media only screen and (max-width: 320px) {
+    .hex-color--header {
+      font-size: 14px;
+    }
+  
+    .hex-color--input #hex,
+    .hex-color--input #hex-btn {
+      width: 120px;
+      height: 30px;
+      font-size: 12px;
+      margin: 10px auto;
+    }
+  
+    .hex-color--btn {
+      width: 100px;
+      height: 30px;
+      font-size: 11px;
+      padding: 0;
+    }
+  }
+  
